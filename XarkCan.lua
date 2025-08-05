@@ -1,3 +1,11 @@
+--[[
+	rbimgui-2
+	version 1.2
+	by Singularity
+        https://v3rmillion.net/member.php?action=profile&uid=947830
+        Singularity#5490
+--]]
+
 repeat wait() until game:GetService("Players").LocalPlayer
 if game:GetService("CoreGui"):FindFirstChild("imgui2") then
     game:GetService("CoreGui"):FindFirstChild("imgui2"):Destroy()
@@ -110,7 +118,7 @@ do -- Load items
 
     Presets.Name = "Presets"
     Presets.Parent = imgui2
-Color3.fromRGB(200, 255, 200)
+    Presets.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Presets.Size = UDim2.new(0, 100, 0, 100)
     Presets.Visible = false
 
@@ -148,7 +156,7 @@ Color3.fromRGB(200, 255, 200)
     Folder_2.BackgroundTransparency = 1.000
     Folder_2.Size = UDim2.new(1, 0, 0, 20)
     Folder_2.Image = "rbxassetid://3570695787"
-Color3.fromRGB(74, 122, 41)
+    Folder_2.ImageColor3 = Color3.fromRGB(41, 74, 122)
     Folder_2.ScaleType = Enum.ScaleType.Slice
     Folder_2.SliceCenter = Rect.new(100, 100, 100, 100)
     Folder_2.SliceScale = 0.050
@@ -220,7 +228,7 @@ Color3.fromRGB(74, 122, 41)
     Main.Size = UDim2.new(0, 300, 0, 22)
     Main.ZIndex = 4
     Main.Image = "rbxassetid://3570695787"
-Color3.fromRGB(10, 50, 10)
+    Main.ImageColor3 = Color3.fromRGB(10, 10, 10)
     Main.ScaleType = Enum.ScaleType.Slice
     Main.SliceCenter = Rect.new(100, 100, 100, 100)
     Main.SliceScale = 0.050
@@ -233,7 +241,7 @@ Color3.fromRGB(10, 50, 10)
     Frame.ZIndex = 4
 
     Frame_2.Parent = Frame
-Color3.fromRGB(59, 68, 59)
+    Frame_2.BackgroundColor3 = Color3.fromRGB(59, 59, 68)
     Frame_2.BorderSizePixel = 0
     Frame_2.Position = UDim2.new(0, 0, 1, 0)
     Frame_2.Size = UDim2.new(1, 0, 0, 2)
@@ -265,7 +273,7 @@ Color3.fromRGB(59, 68, 59)
     Message.Size = UDim2.new(1, 0, 1, 22)
     Message.ZIndex = 3
     Message.Image = "rbxassetid://3570695787"
-Color3.fromRGB(0, 50, 0)
+    Message.ImageColor3 = Color3.fromRGB(0, 0, 0)
     Message.ImageTransparency = 1.000
     Message.ScaleType = Enum.ScaleType.Slice
     Message.SliceCenter = Rect.new(100, 100, 100, 100)
@@ -404,7 +412,7 @@ Color3.fromRGB(0, 50, 0)
     Layer_2.Selectable = true
     Layer_2.Size = UDim2.new(1, 0, 1, 0)
     Layer_2.Image = "rbxassetid://3570695787"
-Color3.fromRGB(21, 63, 38)
+    Layer_2.ImageColor3 = Color3.fromRGB(21, 38, 63)
     Layer_2.ScaleType = Enum.ScaleType.Slice
     Layer_2.SliceCenter = Rect.new(100, 100, 100, 100)
     Layer_2.SliceScale = 0.050
@@ -461,7 +469,7 @@ Color3.fromRGB(21, 63, 38)
 
     Slider_2.Name = "Slider"
     Slider_2.Parent = Inner
-Color3.fromRGB(49, 146, 88)
+    Slider_2.BackgroundColor3 = Color3.fromRGB(49, 88, 146)
     Slider_2.BorderSizePixel = 0
     Slider_2.Position = UDim2.new(0, 10, 0, 0)
     Slider_2.Size = UDim2.new(0, 5, 1, 0)
@@ -657,7 +665,7 @@ Color3.fromRGB(49, 146, 88)
     Layer_4.Selectable = true
     Layer_4.Size = UDim2.new(1, 0, 1, 0)
     Layer_4.Image = "rbxassetid://3570695787"
-Color3.fromRGB(0, 127, 0)
+    Layer_4.ImageColor3 = Color3.fromRGB(127, 0, 0)
     Layer_4.ScaleType = Enum.ScaleType.Slice
     Layer_4.SliceCenter = Rect.new(100, 100, 100, 100)
     Layer_4.SliceScale = 0.050
@@ -697,7 +705,7 @@ Color3.fromRGB(0, 127, 0)
     ImageLabel_6.Size = UDim2.new(1, 0, 1, 0)
     ImageLabel_6.ZIndex = 2
     ImageLabel_6.Image = "rbxassetid://3570695787"
-Color3.fromRGB(42, 46, 44)
+    ImageLabel_6.ImageColor3 = Color3.fromRGB(42, 44, 46)
     ImageLabel_6.ScaleType = Enum.ScaleType.Slice
     ImageLabel_6.SliceCenter = Rect.new(100, 100, 100, 100)
     ImageLabel_6.SliceScale = 0.050
@@ -842,7 +850,7 @@ Color3.fromRGB(42, 46, 44)
     TextBox.Size = UDim2.new(1, -30, 1, 0)
     TextBox.Font = Enum.Font.SourceSans
     TextBox.Text = "Search ..."
-Color3.fromRGB(178, 255, 178)
+    TextBox.TextColor3 = Color3.fromRGB(178, 178, 178)
     TextBox.TextSize = 14.000
     TextBox.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1383,8 +1391,8 @@ local library library = {
             size = Vector2.new(300, 200),
             shadow = 10,
             transparency = 0.2,
-            color = Color3.fromRGB(74, 122, 41),
-            boardcolor = Color3.fromRGB(22, 23, 21),
+            color = Color3.fromRGB(41, 74, 122),
+            boardcolor = Color3.fromRGB(21, 22, 23),
             rounding = 5,
             animation = 0.1,
             position = UDim2.new(0, 100, 0, 100),
@@ -1493,7 +1501,7 @@ local library library = {
 
                     labelOptions = settings.new({
                         text = "New Label",
-                        color = Color3.new(0, 1, 0),
+                        color = Color3.new(1, 1, 1),
                     }).handle(labelOptions)
 
                     local label = new("Label")
@@ -1766,7 +1774,7 @@ local library library = {
 
                     colorOptions = settings.new({
                         text = "New Color Picker",
-                        color = Color3.new(0, 1, 0),
+                        color = Color3.new(1, 0, 0),
                         position = UDim2.new(0, 100, 0, 100),
                     }).handle(colorOptions)
 
@@ -1980,9 +1988,9 @@ local library library = {
                     dropdownOptions = settings.new({
                         text = "New Dropdown",
                         size = 150,
-                        color = Color3.fromRGB(59, 97, 32),
+                        color = Color3.fromRGB(32, 59, 97),
                         rounding = options.rounding,
-                        selectioncolor = Color3.fromRGB(80, 175, 76),
+                        selectioncolor = Color3.fromRGB(76, 175, 80),
                     }).handle(dropdownOptions)
 
                     local dropdownButton = new("Dropdown")
