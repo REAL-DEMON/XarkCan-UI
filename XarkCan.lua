@@ -1,11 +1,3 @@
---[[
-	rbimgui-2
-	version 1.2
-	by Singularity
-        https://v3rmillion.net/member.php?action=profile&uid=947830
-        Singularity#5490
---]]
-
 repeat wait() until game:GetService("Players").LocalPlayer
 if game:GetService("CoreGui"):FindFirstChild("imgui2") then
     game:GetService("CoreGui"):FindFirstChild("imgui2"):Destroy()
@@ -118,7 +110,7 @@ do -- Load items
 
     Presets.Name = "Presets"
     Presets.Parent = imgui2
-    Presets.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Color3.fromRGB(200, 255, 200)
     Presets.Size = UDim2.new(0, 100, 0, 100)
     Presets.Visible = false
 
@@ -156,7 +148,7 @@ do -- Load items
     Folder_2.BackgroundTransparency = 1.000
     Folder_2.Size = UDim2.new(1, 0, 0, 20)
     Folder_2.Image = "rbxassetid://3570695787"
-    Folder_2.ImageColor3 = Color3.fromRGB(41, 74, 122)
+Color3.fromRGB(74, 122, 41)
     Folder_2.ScaleType = Enum.ScaleType.Slice
     Folder_2.SliceCenter = Rect.new(100, 100, 100, 100)
     Folder_2.SliceScale = 0.050
@@ -228,7 +220,7 @@ do -- Load items
     Main.Size = UDim2.new(0, 300, 0, 22)
     Main.ZIndex = 4
     Main.Image = "rbxassetid://3570695787"
-    Main.ImageColor3 = Color3.fromRGB(10, 10, 10)
+Color3.fromRGB(10, 50, 10)
     Main.ScaleType = Enum.ScaleType.Slice
     Main.SliceCenter = Rect.new(100, 100, 100, 100)
     Main.SliceScale = 0.050
@@ -241,7 +233,7 @@ do -- Load items
     Frame.ZIndex = 4
 
     Frame_2.Parent = Frame
-    Frame_2.BackgroundColor3 = Color3.fromRGB(59, 59, 68)
+Color3.fromRGB(59, 68, 59)
     Frame_2.BorderSizePixel = 0
     Frame_2.Position = UDim2.new(0, 0, 1, 0)
     Frame_2.Size = UDim2.new(1, 0, 0, 2)
@@ -273,7 +265,7 @@ do -- Load items
     Message.Size = UDim2.new(1, 0, 1, 22)
     Message.ZIndex = 3
     Message.Image = "rbxassetid://3570695787"
-    Message.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Color3.fromRGB(0, 50, 0)
     Message.ImageTransparency = 1.000
     Message.ScaleType = Enum.ScaleType.Slice
     Message.SliceCenter = Rect.new(100, 100, 100, 100)
@@ -412,7 +404,7 @@ do -- Load items
     Layer_2.Selectable = true
     Layer_2.Size = UDim2.new(1, 0, 1, 0)
     Layer_2.Image = "rbxassetid://3570695787"
-    Layer_2.ImageColor3 = Color3.fromRGB(21, 38, 63)
+Color3.fromRGB(21, 63, 38)
     Layer_2.ScaleType = Enum.ScaleType.Slice
     Layer_2.SliceCenter = Rect.new(100, 100, 100, 100)
     Layer_2.SliceScale = 0.050
@@ -469,7 +461,7 @@ do -- Load items
 
     Slider_2.Name = "Slider"
     Slider_2.Parent = Inner
-    Slider_2.BackgroundColor3 = Color3.fromRGB(49, 88, 146)
+Color3.fromRGB(49, 146, 88)
     Slider_2.BorderSizePixel = 0
     Slider_2.Position = UDim2.new(0, 10, 0, 0)
     Slider_2.Size = UDim2.new(0, 5, 1, 0)
@@ -665,7 +657,7 @@ do -- Load items
     Layer_4.Selectable = true
     Layer_4.Size = UDim2.new(1, 0, 1, 0)
     Layer_4.Image = "rbxassetid://3570695787"
-    Layer_4.ImageColor3 = Color3.fromRGB(127, 0, 0)
+Color3.fromRGB(0, 127, 0)
     Layer_4.ScaleType = Enum.ScaleType.Slice
     Layer_4.SliceCenter = Rect.new(100, 100, 100, 100)
     Layer_4.SliceScale = 0.050
@@ -705,7 +697,7 @@ do -- Load items
     ImageLabel_6.Size = UDim2.new(1, 0, 1, 0)
     ImageLabel_6.ZIndex = 2
     ImageLabel_6.Image = "rbxassetid://3570695787"
-    ImageLabel_6.ImageColor3 = Color3.fromRGB(42, 44, 46)
+Color3.fromRGB(42, 46, 44)
     ImageLabel_6.ScaleType = Enum.ScaleType.Slice
     ImageLabel_6.SliceCenter = Rect.new(100, 100, 100, 100)
     ImageLabel_6.SliceScale = 0.050
@@ -850,7 +842,7 @@ do -- Load items
     TextBox.Size = UDim2.new(1, -30, 1, 0)
     TextBox.Font = Enum.Font.SourceSans
     TextBox.Text = "Search ..."
-    TextBox.TextColor3 = Color3.fromRGB(178, 178, 178)
+Color3.fromRGB(178, 255, 178)
     TextBox.TextSize = 14.000
     TextBox.TextXAlignment = Enum.TextXAlignment.Left
 
