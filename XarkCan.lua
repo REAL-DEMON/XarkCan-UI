@@ -1391,8 +1391,8 @@ local library library = {
             size = Vector2.new(300, 200),
             shadow = 10,
             transparency = 0.2,
-            color = Color3.fromRGB(41, 74, 122),
-            boardcolor = Color3.fromRGB(21, 22, 23),
+            color = Color3.fromRGB(74, 122, 41),
+            boardcolor = Color3.fromRGB(22, 23, 21),
             rounding = 5,
             animation = 0.1,
             position = UDim2.new(0, 100, 0, 100),
@@ -1501,7 +1501,7 @@ local library library = {
 
                     labelOptions = settings.new({
                         text = "New Label",
-                        color = Color3.new(1, 1, 1),
+                        color = Color3.new(0, 1, 0),
                     }).handle(labelOptions)
 
                     local label = new("Label")
@@ -1774,7 +1774,7 @@ local library library = {
 
                     colorOptions = settings.new({
                         text = "New Color Picker",
-                        color = Color3.new(1, 0, 0),
+                        color = Color3.new(0, 1, 0),
                         position = UDim2.new(0, 100, 0, 100),
                     }).handle(colorOptions)
 
@@ -1988,9 +1988,9 @@ local library library = {
                     dropdownOptions = settings.new({
                         text = "New Dropdown",
                         size = 150,
-                        color = Color3.fromRGB(32, 59, 97),
+                        color = Color3.fromRGB(59, 97, 32),
                         rounding = options.rounding,
-                        selectioncolor = Color3.fromRGB(76, 175, 80),
+                        selectioncolor = Color3.fromRGB(80, 175, 76),
                     }).handle(dropdownOptions)
 
                     local dropdownButton = new("Dropdown")
